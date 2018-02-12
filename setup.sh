@@ -1,7 +1,7 @@
 #! /bin/sh
 
 #Installing Tensorflow Object Detection on Ubuntu 16.04
-#modify scripts permissions chmod 400 setup.sh
+#modify scripts permissions chmod 755 setup.sh
 #sudo chmod 755 setup.sh
 #run
 #sudo ./setup.sh
@@ -53,4 +53,4 @@ echo 'export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim' >> ~/.bashrc
 python object_detection/builders/model_builder_test.py
 
 #remove self and install folder
-sudo rm -rf tensorflow
+sudo rm -rf tensorflow_object_detection_enviroment_setup_ubuntu1604
