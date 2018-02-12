@@ -30,10 +30,6 @@ sudo pip install lxml
 sudo pip install jupyter
 sudo pip install matplotlib
 
-#create new tensorflow directory and cd in
-mkdir tensorflow
-cd tensorflow
-
 #clone github tensorflow object detection (https://github.com/tensorflow/models.git)
 git clone https://github.com/tensorflow/models.git
 
@@ -53,4 +49,5 @@ echo 'export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim' >> ~/.bashrc
 python object_detection/builders/model_builder_test.py
 
 #remove self and install folder
+cd ../../
 sudo rm -rf tensorflow_object_detection_enviroment_setup_ubuntu1604
