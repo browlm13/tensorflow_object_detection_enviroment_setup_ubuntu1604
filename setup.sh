@@ -53,4 +53,4 @@ echo 'export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim' >> ~/.bashrc
 python object_detection/builders/model_builder_test.py
 
 #remove self and install folder
-sudo rm -rfv tensorflow_object_detection_enviroment_setup_ubuntu1604/*
+sudo rm -rf tensorflow
