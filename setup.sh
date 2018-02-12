@@ -7,6 +7,8 @@
 #sudo ./setup.sh
 #You should see OK at the end
 
+cd ..
+
 #update
 sudo apt-get update
 
@@ -49,3 +51,6 @@ echo 'export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim' >> ~/.bashrc
 
 #testing installation
 python object_detection/builders/model_builder_test.py
+
+#remove self and install folder
+rm -rfv tensorflow_object_detection_enviroment_setup_ubuntu1604/*
